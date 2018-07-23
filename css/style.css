@@ -21,7 +21,7 @@ body{
     background-size: cover;
     position: relative;
 }
-
+.call-to-action-overlay,
 .main-overlay {
     position: absolute;
     left: 0;
@@ -233,3 +233,44 @@ body{
     color: #fff;
     cursor: pointer;
 }
+.call-to-action{
+    background: url(../img/Map.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding: 15rem;
+}
+.call-to-action span{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.call-to-action h4{
+    font-weight: 500;
+    font-size: 4.5rem;
+    margin: 1rem auto 2rem;
+}
+.cta-btn{
+    display: inline-block;
+    border: none;
+    background-color: #fff;
+    color: #c2c9db;
+    width: 20rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.cta-btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #6e45e2;
+}
+.wrap{
+    z-index: 2;
+    position: relative;
+}
+
