@@ -122,8 +122,6 @@ body{
 
 .table{
     background-color: #f9fafc;
-    height: 100vh;
-    min-height: 600px;
     padding: 10rem;
 }
 
@@ -134,8 +132,10 @@ body{
 
 .table-header span{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #9fa4af;
+    margin-bottom: 1.5rem;
+    display: inline-block;
 }
 
 .table-header span::after{
@@ -171,14 +171,15 @@ body{
 .price-tags{
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
 }
 .price-tag{
     background-color: #fff;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 6rem;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -336,4 +337,43 @@ body{
     font-size: 1.4rem;
     display: inline-block;
     margin-right: 1rem;
+}
+
+.m-menu-link {
+    display: none;
+    color: #fff;
+    font-size: 3rem;
+}
+.m-menu{
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    font-size: 3rem;
+    line-height: 2;
+    background-color: #6e45e2;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(100%)
+}
+.m-menu_active{
+    transform: translateX(0%)
+}
+.close-menu {
+    position: fixed;
+    right: 5rem;
+    top: 0;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #fff;
+}
+.close-menu:hover{
+    cursor: pointer;
 }
